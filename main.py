@@ -170,12 +170,9 @@ def run_matchup(player_cfgs: list, num_pairs: int, quiet: bool = False):
     # Summary
     total_hands = len(all_hands)
     wins = {}
-    for h in all_hands:
-        w = h["winner"]
-        wins[w] = wins.get(w, 0) + 1
-
     total_tokens = {}
     for h in all_hands:
+        wins[h["winner"]] = wins.get(h["winner"], 0) + 1
         for name, (tin, tout) in h["tokens"].items():
             if name not in total_tokens:
                 total_tokens[name] = [0, 0]

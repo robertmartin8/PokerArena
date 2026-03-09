@@ -41,6 +41,7 @@ class HandState:
         self.winner = None
         self.log: list[str] = []
         self.action_history: list[dict] = []
+        self._history_lines: list[str] = []
 
     def _log(self, msg: str):
         self.log.append(msg)
@@ -108,15 +109,13 @@ class HandState:
             "pot_after_bb": self.pot,
             "stack_after_bb": player.stack,
         })
+        self._history_lines.append(f"  {player.name} posts {label}")
 
     def _betting_round(self, street: str, first_actor_idx: int) -> bool:
         """Run a betting round. Returns True if hand continues, False if someone folded."""
-        for p in self.players:
-            p.current_bet = 0
-
-        if street == "Preflop":
-            self.players[self.dealer_idx].current_bet = SMALL_BLIND
-            self.players[self.bb_idx].current_bet = BIG_BLIND
+        if street != "Preflop":
+            for p in self.players:
+                p.current_bet = 0
 
         current_bet = max(p.current_bet for p in self.players)
         actors = [first_actor_idx, 1 - first_actor_idx]
@@ -144,15 +143,14 @@ class HandState:
                     break
 
             state = self._build_state(actor, opponent, street, current_bet)
-            raw = actor.decide(state, street=street)
-            action, amount = actor.parse_action(raw)
+            action, amount = actor.decide(state, street=street)
 
             action, amount, corrections = self._validate_action(
                 actor, action, amount, current_bet, last_raise_size
             )
 
             old_current_bet_actor = actor.current_bet
-            self._execute_action(actor, action, amount, current_bet, street, corrections)
+            self._execute_action(actor, action, amount, street, corrections)
             action_count += 1
 
             if action == "fold":
@@ -166,9 +164,7 @@ class HandState:
                     # Full raise — reopens action
                     last_raise_size = raise_delta
                     last_raiser = actor_idx
-                else:
-                    # Short all-in — does NOT reopen for previous raiser
-                    current_bet = actor.current_bet
+                # Short all-in — does NOT reopen for previous raiser
                 current_bet = actor.current_bet
 
             i += 1
@@ -196,6 +192,7 @@ class HandState:
                     "corrections": [{"from": "cap_reached", "to": "fold",
                                      "reason": "action cap hit with unmatched bets"}],
                 })
+                self._history_lines.append(f"  [{street}] {owing.name}: fold")
                 self.hand_over = True
                 self.winner = winner
                 return False
@@ -223,14 +220,9 @@ class HandState:
             lines.append("You must fold, call, or raise.")
 
         # Action history
-        if self.action_history:
+        if self._history_lines:
             lines.append("Action history:")
-            for a in self.action_history:
-                if a["action"] in ("sb", "bb"):
-                    lines.append(f"  {a['actor']} posts {a['action'].upper()}")
-                else:
-                    detail = f" to {fmt(a['bet_to_bb'])}" if a["action"] == "raise" else ""
-                    lines.append(f"  [{a['street']}] {a['actor']}: {a['action']}{detail}")
+            lines.extend(self._history_lines)
 
         return "\n".join(lines)
 
@@ -279,8 +271,7 @@ class HandState:
 
         return (action, amount, corrections)
 
-    def _execute_action(self, actor, action: str, amount, current_bet, street: str,
-                        corrections: list):
+    def _execute_action(self, actor, action: str, amount, street: str, corrections: list):
         """Execute a validated action."""
         amount_put_in = 0
         if action == "fold":
@@ -288,16 +279,13 @@ class HandState:
         elif action == "check":
             self._log(f"  {actor.name}: CHECK")
         elif action == "call":
-            call_amount = min(current_bet - actor.current_bet, actor.stack)
-            actor.stack -= call_amount
-            actor.current_bet += call_amount
-            self.pot += call_amount
-            amount_put_in = call_amount
-            self._log(f"  {actor.name}: CALL {fmt(call_amount)} (pot: {fmt(self.pot)})")
+            actor.stack -= amount
+            actor.current_bet += amount
+            self.pot += amount
+            amount_put_in = amount
+            self._log(f"  {actor.name}: CALL {fmt(amount)} (pot: {fmt(self.pot)})")
         elif action == "raise":
-            raise_to = amount
-            cost = raise_to - actor.current_bet
-            cost = min(cost, actor.stack)
+            cost = min(amount - actor.current_bet, actor.stack)
             actor.stack -= cost
             actor.current_bet += cost
             self.pot += cost
@@ -316,6 +304,9 @@ class HandState:
         if corrections:
             entry["corrections"] = corrections
         self.action_history.append(entry)
+
+        detail = f" to {fmt(actor.current_bet)}" if action == "raise" else ""
+        self._history_lines.append(f"  [{street}] {actor.name}: {action}{detail}")
 
     def _showdown(self) -> dict:
         """Evaluate hands and determine winner."""
@@ -343,9 +334,7 @@ class HandState:
 
     def _finish(self) -> dict:
         """Log hand summary and return result."""
-        if self.winner and not self.hand_over:
-            pass
-        elif self.winner and self.hand_over:
+        if self.hand_over:
             self.winner.stack += self.pot
 
         self._log(f"\n--- Hand Summary ---")
