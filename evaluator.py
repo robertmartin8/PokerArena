@@ -1,6 +1,7 @@
 """Pure Python hand evaluator for Texas Hold'em (no external deps)."""
 
 from collections import Counter
+from collections.abc import Sequence
 from itertools import combinations
 
 RANK_ORDER = "23456789TJQKA"
@@ -41,7 +42,7 @@ HAND_NAMES = {
 }
 
 
-def _evaluate_5(cards: list[str]) -> tuple:
+def _evaluate_5(cards: Sequence[str]) -> tuple:
     """Evaluate exactly 5 cards. Returns a comparable tuple (category, *kickers)."""
     ranks = sorted([card_rank(c) for c in cards], reverse=True)
     suits = [card_suit(c) for c in cards]
@@ -109,7 +110,7 @@ def evaluate(cards: list[str]) -> tuple:
 
     best = None
     for combo in combinations(cards, 5):
-        score = _evaluate_5(list(combo))
+        score = _evaluate_5(combo)
         if best is None or score > best:
             best = score
     return best

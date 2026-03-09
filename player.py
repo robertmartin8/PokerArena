@@ -2,6 +2,7 @@
 
 import re
 import time
+import random
 from openai import OpenAI
 
 SYSTEM_PROMPT = """You are a poker player in a heads-up No-Limit Texas Hold'em game.
@@ -107,8 +108,8 @@ class LLMPlayer:
 
             except Exception as e:
                 if attempt < MAX_RETRIES - 1:
-                    wait = RETRY_DELAY * (attempt + 1)
-                    print(f"  [{self.name}] API error (attempt {attempt+1}/{MAX_RETRIES}), retrying in {wait}s...")
+                    wait = RETRY_DELAY * (2 ** attempt) + random.uniform(0, 1)
+                    print(f"  [{self.name}] API error (attempt {attempt+1}/{MAX_RETRIES}), retrying in {wait:.1f}s...")
                     time.sleep(wait)
                     continue
                 dec.error = str(e)
@@ -132,8 +133,8 @@ class LLMPlayer:
             return "check"
         return "fold"
 
-    def decide(self, game_state: str, street: str = "") -> str:
-        """Ask the LLM for an action. Returns raw response text."""
+    def decide(self, game_state: str, street: str = "") -> tuple[str, float]:
+        """Ask the LLM for an action. Returns (action, amount)."""
         dec = Decision()
         dec.player_name = self.name
         dec.street = street
@@ -154,7 +155,7 @@ class LLMPlayer:
             dec.forced_action = True
             self.decisions.append(dec)
             self._track_forced(forced=True)
-            return fallback
+            return (fallback, 0)
 
         dec.raw_response = raw
         action, amount = self._parse(raw)
@@ -187,13 +188,13 @@ class LLMPlayer:
             dec.forced_action = True
             self.decisions.append(dec)
             self._track_forced(forced=True)
-            return fallback
+            return (fallback, 0)
 
         dec.action = action
         dec.amount = amount
         self.decisions.append(dec)
         self._track_forced(forced=False)
-        return f"ACTION: {action}" + (f" {amount}" if amount else "")
+        return (action, amount)
 
     @staticmethod
     def _parse(raw: str) -> tuple[str | None, float]:
@@ -210,11 +211,3 @@ class LLMPlayer:
             return (m.group(1).lower(), float(m.group(2)) if m.group(2) else 0)
 
         return (None, 0)
-
-    def parse_action(self, raw: str) -> tuple[str, float]:
-        """Parse LLM response into (action, amount). Called by game engine."""
-        # Action was already parsed in decide() — just read from the decision
-        if self.decisions:
-            d = self.decisions[-1]
-            return (d.action, d.amount)
-        return ("fold", 0)
