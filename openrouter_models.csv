@@ -1,0 +1,347 @@
+id,name,context_length,prompt_cost_per_M,completion_cost_per_M,reasoning_cost_per_M,has_reasoning,max_completion_tokens,is_moderated,input_modalities,output_modalities
+openrouter/bodybuilder,Body Builder (beta),128000,-1000000.0,-1000000.0,0.0,False,,False,text,text
+openrouter/auto,Auto Router,2000000,-1000000.0,-1000000.0,0.0,True,,False,text|image|audio|file|video,text|image
+openrouter/free,Free Models Router,200000,0.0,0.0,0.0,True,,False,text|image,text
+stepfun/step-3.5-flash:free,StepFun: Step 3.5 Flash (free),256000,0.0,0.0,0.0,True,256000,False,text,text
+arcee-ai/trinity-large-preview:free,Arcee AI: Trinity Large Preview (free),131000,0.0,0.0,0.0,False,,False,text,text
+liquid/lfm-2.5-1.2b-thinking:free,LiquidAI: LFM2.5-1.2B-Thinking (free),32768,0.0,0.0,0.0,True,,False,text,text
+liquid/lfm-2.5-1.2b-instruct:free,LiquidAI: LFM2.5-1.2B-Instruct (free),32768,0.0,0.0,0.0,False,,False,text,text
+nvidia/nemotron-3-nano-30b-a3b:free,NVIDIA: Nemotron 3 Nano 30B A3B (free),256000,0.0,0.0,0.0,True,,False,text,text
+arcee-ai/trinity-mini:free,Arcee AI: Trinity Mini (free),131072,0.0,0.0,0.0,True,,False,text,text
+nvidia/nemotron-nano-12b-v2-vl:free,NVIDIA: Nemotron Nano 12B 2 VL (free),128000,0.0,0.0,0.0,True,128000,False,image|text|video,text
+qwen/qwen3-vl-30b-a3b-thinking,Qwen: Qwen3 VL 30B A3B Thinking,131072,0.0,0.0,0.0,True,32768,False,text|image,text
+qwen/qwen3-vl-235b-a22b-thinking,Qwen: Qwen3 VL 235B A22B Thinking,131072,0.0,0.0,0.0,True,32768,False,text|image,text
+qwen/qwen3-next-80b-a3b-instruct:free,Qwen: Qwen3 Next 80B A3B Instruct (free),262144,0.0,0.0,0.0,False,,False,text,text
+nvidia/nemotron-nano-9b-v2:free,NVIDIA: Nemotron Nano 9B V2 (free),128000,0.0,0.0,0.0,True,,False,text,text
+openai/gpt-oss-120b:free,OpenAI: gpt-oss-120b (free),131072,0.0,0.0,0.0,True,131072,True,text,text
+openai/gpt-oss-20b:free,OpenAI: gpt-oss-20b (free),131072,0.0,0.0,0.0,True,131072,True,text,text
+z-ai/glm-4.5-air:free,Z.ai: GLM 4.5 Air (free),131072,0.0,0.0,0.0,True,96000,False,text,text
+qwen/qwen3-coder:free,Qwen: Qwen3 Coder 480B A35B (free),262000,0.0,0.0,0.0,False,262000,False,text,text
+cognitivecomputations/dolphin-mistral-24b-venice-edition:free,Venice: Uncensored (free),32768,0.0,0.0,0.0,False,,False,text,text
+google/gemma-3n-e2b-it:free,Google: Gemma 3n 2B (free),8192,0.0,0.0,0.0,False,2048,False,text,text
+google/gemma-3n-e4b-it:free,Google: Gemma 3n 4B (free),8192,0.0,0.0,0.0,False,2048,False,text,text
+qwen/qwen3-4b:free,Qwen: Qwen3 4B (free),40960,0.0,0.0,0.0,True,,False,text,text
+mistralai/mistral-small-3.1-24b-instruct:free,Mistral: Mistral Small 3.1 24B (free),128000,0.0,0.0,0.0,False,,False,text|image,text
+google/gemma-3-4b-it:free,Google: Gemma 3 4B (free),32768,0.0,0.0,0.0,False,8192,False,text|image,text
+google/gemma-3-12b-it:free,Google: Gemma 3 12B (free),32768,0.0,0.0,0.0,False,8192,False,text|image,text
+google/gemma-3-27b-it:free,Google: Gemma 3 27B (free),131072,0.0,0.0,0.0,False,8192,False,text|image,text
+meta-llama/llama-3.3-70b-instruct:free,Meta: Llama 3.3 70B Instruct (free),128000,0.0,0.0,0.0,False,128000,True,text,text
+meta-llama/llama-3.2-3b-instruct:free,Meta: Llama 3.2 3B Instruct (free),131072,0.0,0.0,0.0,False,,False,text,text
+nousresearch/hermes-3-llama-3.1-405b:free,Nous: Hermes 3 405B Instruct (free),131072,0.0,0.0,0.0,False,,False,text,text
+liquid/lfm2-8b-a1b,LiquidAI: LFM2-8B-A1B,32768,0.01,0.02,0.0,False,,False,text,text
+liquid/lfm-2.2-6b,LiquidAI: LFM2-2.6B,32768,0.01,0.02,0.0,False,,False,text,text
+ibm-granite/granite-4.0-h-micro,IBM: Granite 4.0 Micro,131000,0.017,0.11,0.0,False,,False,text,text
+google/gemma-3n-e4b-it,Google: Gemma 3n 4B,32768,0.02,0.04,0.0,False,,False,text,text
+meta-llama/llama-guard-3-8b,Llama Guard 3 8B,131072,0.02,0.06,0.0,False,,False,text,text
+meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,16384,0.02,0.049999999999999996,0.0,False,16384,False,text,text
+mistralai/mistral-nemo,Mistral: Mistral Nemo,131072,0.02,0.04,0.0,False,16384,False,text,text
+meta-llama/llama-3.2-1b-instruct,Meta: Llama 3.2 1B Instruct,60000,0.027,0.19999999999999998,0.0,False,,False,text,text
+liquid/lfm-2-24b-a2b,LiquidAI: LFM2-24B-A2B,32768,0.03,0.12,0.0,False,,False,text,text
+openai/gpt-oss-20b,OpenAI: gpt-oss-20b,131072,0.03,0.14,0.0,True,,False,text,text
+qwen/qwen2.5-coder-7b-instruct,Qwen: Qwen2.5 Coder 7B Instruct,32768,0.03,0.09,0.0,False,,False,text,text
+google/gemma-2-9b-it,Google: Gemma 2 9B,8192,0.03,0.09,0.0,False,,False,text,text
+meta-llama/llama-3-8b-instruct,Meta: Llama 3 8B Instruct,8192,0.03,0.04,0.0,False,16384,False,text,text
+qwen/qwen-turbo,Qwen: Qwen-Turbo,131072,0.0325,0.13,0.0,False,8192,False,text,text
+amazon/nova-micro-v1,Amazon: Nova Micro 1.0,128000,0.035,0.14,0.0,False,5120,True,text,text
+cohere/command-r7b-12-2024,Cohere: Command R7B (12-2024),128000,0.0375,0.15,0.0,False,4000,True,text,text
+openai/gpt-oss-120b,OpenAI: gpt-oss-120b,131072,0.039,0.19,0.0,True,,False,text,text
+openai/gpt-oss-120b:exacto,OpenAI: gpt-oss-120b (exacto),131072,0.039,0.19,0.0,True,,False,text,text
+nvidia/nemotron-nano-9b-v2,NVIDIA: Nemotron Nano 9B V2,131072,0.04,0.16,0.0,True,,False,text,text
+google/gemma-3-4b-it,Google: Gemma 3 4B,131072,0.04,0.08,0.0,False,,False,text|image,text
+google/gemma-3-12b-it,Google: Gemma 3 12B,131072,0.04,0.13,0.0,False,,False,text|image,text
+google/gemma-3-27b-it,Google: Gemma 3 27B,128000,0.04,0.15,0.0,False,65536,False,text|image,text
+qwen/qwen-2.5-7b-instruct,Qwen: Qwen2.5 7B Instruct,32768,0.04,0.09999999999999999,0.0,False,,False,text,text
+sao10k/l3-lunaris-8b,Sao10K: Llama 3 8B Lunaris,8192,0.04,0.049999999999999996,0.0,False,,False,text,text
+arcee-ai/trinity-mini,Arcee AI: Trinity Mini,131072,0.045,0.15,0.0,True,131072,False,text,text
+meta-llama/llama-3.2-11b-vision-instruct,Meta: Llama 3.2 11B Vision Instruct,131072,0.049,0.049,0.0,False,16384,False,text|image,text
+nvidia/nemotron-3-nano-30b-a3b,NVIDIA: Nemotron 3 Nano 30B A3B,262144,0.049999999999999996,0.19999999999999998,0.0,True,,False,text,text
+openai/gpt-5-nano,OpenAI: GPT-5 Nano,400000,0.049999999999999996,0.39999999999999997,0.0,True,128000,True,text|image|file,text
+qwen/qwen3-8b,Qwen: Qwen3 8B,40960,0.049999999999999996,0.39999999999999997,0.0,True,8192,False,text,text
+allenai/olmo-2-0325-32b-instruct,AllenAI: Olmo 2 32B Instruct,128000,0.049999999999999996,0.19999999999999998,0.0,False,,False,text,text
+mistralai/mistral-small-24b-instruct-2501,Mistral: Mistral Small 3,32768,0.049999999999999996,0.08,0.0,False,16384,False,text,text
+qwen/qwen3-30b-a3b-thinking-2507,Qwen: Qwen3 30B A3B Thinking 2507,32768,0.051,0.33999999999999997,0.0,True,,False,text,text
+meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,80000,0.051,0.33999999999999997,0.0,False,,False,text,text
+z-ai/glm-4.7-flash,Z.ai: GLM 4.7 Flash,202752,0.06,0.39999999999999997,0.0,True,,False,text,text
+mistralai/mistral-small-3.2-24b-instruct,Mistral: Mistral Small 3.2 24B,131072,0.06,0.18,0.0,False,131072,False,image|text,text
+qwen/qwen3-14b,Qwen: Qwen3 14B,40960,0.06,0.24,0.0,True,40960,False,text,text
+microsoft/phi-4,Microsoft: Phi 4,16384,0.06,0.14,0.0,False,16384,False,text,text
+amazon/nova-lite-v1,Amazon: Nova Lite 1.0,300000,0.06,0.24,0.0,False,5120,True,text|image,text
+gryphe/mythomax-l2-13b,MythoMax 13B,4096,0.06,0.06,0.0,False,4096,False,text,text
+baidu/ernie-4.5-21b-a3b-thinking,Baidu: ERNIE 4.5 21B A3B Thinking,131072,0.07,0.28,0.0,True,65536,False,text,text
+baidu/ernie-4.5-21b-a3b,Baidu: ERNIE 4.5 21B A3B,120000,0.07,0.28,0.0,False,8000,False,text,text
+qwen/qwen3-coder-30b-a3b-instruct,Qwen: Qwen3 Coder 30B A3B Instruct,160000,0.07,0.27,0.0,False,32768,False,text,text
+qwen/qwen3-235b-a22b-2507,Qwen: Qwen3 235B A22B Instruct 2507,262144,0.071,0.09999999999999999,0.0,True,,False,text,text
+bytedance-seed/seed-1.6-flash,ByteDance Seed: Seed 1.6 Flash,262144,0.075,0.3,0.0,True,32768,False,image|text|video,text
+openai/gpt-oss-safeguard-20b,OpenAI: gpt-oss-safeguard-20b,131072,0.075,0.3,0.0,True,65536,False,text,text
+google/gemini-2.0-flash-lite-001,Google: Gemini 2.0 Flash Lite,1048576,0.075,0.3,0.3,False,8192,False,text|image|file|audio|video,text
+qwen/qwen3-vl-8b-instruct,Qwen: Qwen3 VL 8B Instruct,131072,0.08,0.5,0.0,False,32768,False,image|text,text
+qwen/qwen3-30b-a3b,Qwen: Qwen3 30B A3B,40960,0.08,0.28,0.0,True,40960,False,text,text
+qwen/qwen3-32b,Qwen: Qwen3 32B,40960,0.08,0.24,0.0,True,40960,False,text,text
+meta-llama/llama-4-scout,Meta: Llama 4 Scout,327680,0.08,0.3,0.0,False,16384,False,text|image,text
+xiaomi/mimo-v2-flash,Xiaomi: MiMo-V2-Flash,262144,0.09,0.29,0.0,True,65536,False,text,text
+alibaba/tongyi-deepresearch-30b-a3b,Tongyi DeepResearch 30B A3B,131072,0.09,0.44999999999999996,0.0,True,131072,False,text,text
+qwen/qwen3-next-80b-a3b-instruct,Qwen: Qwen3 Next 80B A3B Instruct,262144,0.09,1.1,0.0,False,,False,text,text
+qwen/qwen3-30b-a3b-instruct-2507,Qwen: Qwen3 30B A3B Instruct 2507,262144,0.09,0.3,0.0,False,262144,False,text,text
+neversleep/llama-3.1-lumimaid-8b,NeverSleep: Lumimaid v0.2 8B,32768,0.09,0.6,0.0,False,4096,False,text,text
+bytedance-seed/seed-2.0-mini,ByteDance Seed: Seed-2.0-Mini,262144,0.09999999999999999,0.39999999999999997,0.0,True,131072,False,text|image|video,text
+qwen/qwen3.5-flash-02-23,Qwen: Qwen3.5-Flash,1000000,0.09999999999999999,0.39999999999999997,0.0,True,65536,False,text|image|video,text
+stepfun/step-3.5-flash,StepFun: Step 3.5 Flash,256000,0.09999999999999999,0.3,0.0,True,256000,False,text,text
+mistralai/mistral-small-creative,Mistral: Mistral Small Creative,32768,0.09999999999999999,0.3,0.0,False,,False,text,text
+mistralai/ministral-3b-2512,Mistral: Ministral 3 3B 2512,131072,0.09999999999999999,0.09999999999999999,0.0,False,,False,text|image,text
+allenai/olmo-3-7b-instruct,AllenAI: Olmo 3 7B Instruct,65536,0.09999999999999999,0.19999999999999998,0.0,False,65536,False,text,text
+mistralai/voxtral-small-24b-2507,Mistral: Voxtral Small 24B 2507,32000,0.09999999999999999,0.3,0.0,False,,False,text|audio,text
+nvidia/llama-3.3-nemotron-super-49b-v1.5,NVIDIA: Llama 3.3 Nemotron Super 49B V1.5,131072,0.09999999999999999,0.39999999999999997,0.0,True,,False,text,text
+google/gemini-2.5-flash-lite-preview-09-2025,Google: Gemini 2.5 Flash Lite Preview 09-2025,1048576,0.09999999999999999,0.39999999999999997,0.39999999999999997,True,65536,False,text|image|file|audio|video,text
+z-ai/glm-4-32b,Z.ai: GLM 4 32B ,128000,0.09999999999999999,0.09999999999999999,0.0,False,,False,text,text
+bytedance/ui-tars-1.5-7b,ByteDance: UI-TARS 7B ,128000,0.09999999999999999,0.19999999999999998,0.0,False,2048,False,image|text,text
+google/gemini-2.5-flash-lite,Google: Gemini 2.5 Flash Lite,1048576,0.09999999999999999,0.39999999999999997,0.39999999999999997,True,65535,False,text|image|file|audio|video,text
+mistralai/devstral-small,Mistral: Devstral Small 1.1,131072,0.09999999999999999,0.3,0.0,False,,False,text,text
+openai/gpt-4.1-nano,OpenAI: GPT-4.1 Nano,1047576,0.09999999999999999,0.39999999999999997,0.0,False,32768,True,image|text|file,text
+google/gemini-2.0-flash-001,Google: Gemini 2.0 Flash,1048576,0.09999999999999999,0.39999999999999997,0.39999999999999997,False,8192,False,text|image|file|audio|video,text
+meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,131072,0.09999999999999999,0.32,0.0,False,16384,False,text,text
+qwen/qwen3-vl-32b-instruct,Qwen: Qwen3 VL 32B Instruct,131072,0.10400000000000001,0.41600000000000004,0.0,False,32768,False,text|image,text
+qwen/qwen3-235b-a22b-thinking-2507,Qwen: Qwen3 235B A22B Thinking 2507,262144,0.11,0.6,0.0,True,262144,False,text,text
+mistralai/mistral-7b-instruct-v0.1,Mistral: Mistral 7B Instruct v0.1,2824,0.11,0.19,0.0,False,,False,text,text
+qwen/qwen3-vl-8b-thinking,Qwen: Qwen3 VL 8B Thinking,131072,0.117,1.365,0.0,True,32768,False,image|text,text
+qwen/qwen3-coder-next,Qwen: Qwen3 Coder Next,262144,0.12,0.75,0.0,False,65536,False,text,text
+allenai/olmo-3-7b-think,AllenAI: Olmo 3 7B Think,65536,0.12,0.19999999999999998,0.0,True,65536,False,text,text
+qwen/qwen-2.5-72b-instruct,Qwen2.5 72B Instruct,32768,0.12,0.39,0.0,False,16384,False,text,text
+qwen/qwen3-vl-30b-a3b-instruct,Qwen: Qwen3 VL 30B A3B Instruct,131072,0.13,0.52,0.0,False,32768,False,text|image,text
+nousresearch/hermes-4-70b,Nous: Hermes 4 70B,131072,0.13,0.39999999999999997,0.0,True,,False,text,text
+z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,131072,0.13,0.85,0.0,True,98304,False,text,text
+qwen/qwen-vl-plus,Qwen: Qwen VL Plus,131072,0.1365,0.40950000000000003,0.0,False,8192,False,text|image,text
+baidu/ernie-4.5-vl-28b-a3b,Baidu: ERNIE 4.5 VL 28B A3B,30000,0.14,0.56,0.0,True,8000,False,text|image,text
+tencent/hunyuan-a13b-instruct,Tencent: Hunyuan A13B Instruct,131072,0.14,0.5700000000000001,0.0,True,131072,False,text,text
+nousresearch/hermes-2-pro-llama-3-8b,NousResearch: Hermes 2 Pro - Llama-3 8B,8192,0.14,0.14,0.0,False,8192,False,text,text
+upstage/solar-pro-3,Upstage: Solar Pro 3,128000,0.15,0.6,0.0,True,,False,text,text
+allenai/olmo-3.1-32b-think,AllenAI: Olmo 3.1 32B Think,65536,0.15,0.5,0.0,True,65536,False,text,text
+essentialai/rnj-1-instruct,EssentialAI: Rnj 1 Instruct,32768,0.15,0.15,0.0,False,,False,text,text
+mistralai/ministral-8b-2512,Mistral: Ministral 3 8B 2512,262144,0.15,0.15,0.0,False,,False,text|image,text
+allenai/olmo-3-32b-think,AllenAI: Olmo 3 32B Think,65536,0.15,0.5,0.0,True,65536,False,text,text
+qwen/qwen3-next-80b-a3b-thinking,Qwen: Qwen3 Next 80B A3B Thinking,128000,0.15,1.2,0.0,True,,False,text,text
+deepseek/deepseek-chat-v3.1,DeepSeek: DeepSeek V3.1,32768,0.15,0.75,0.0,True,7168,False,text,text
+meta-llama/llama-4-maverick,Meta: Llama 4 Maverick,1048576,0.15,0.6,0.0,False,16384,False,text|image,text
+openai/gpt-4o-mini-search-preview,OpenAI: GPT-4o-mini Search Preview,128000,0.15,0.6,0.0,False,16384,True,text,text
+qwen/qwq-32b,Qwen: QwQ 32B,32768,0.15,0.39999999999999997,0.0,True,32768,False,text,text
+cohere/command-r-08-2024,Cohere: Command R (08-2024),128000,0.15,0.6,0.0,False,4000,True,text,text
+openai/gpt-4o-mini-2024-07-18,OpenAI: GPT-4o-mini (2024-07-18),128000,0.15,0.6,0.0,False,16384,True,text|image|file,text
+openai/gpt-4o-mini,OpenAI: GPT-4o-mini,128000,0.15,0.6,0.0,False,16384,True,text|image|file,text
+qwen/qwen3.5-35b-a3b,Qwen: Qwen3.5-35B-A3B,262144,0.1625,1.3,0.0,True,65536,False,text|image|video,text
+thedrummer/rocinante-12b,TheDrummer: Rocinante 12B,32768,0.16999999999999998,0.43,0.0,False,32768,False,text,text
+arcee-ai/spotlight,Arcee AI: Spotlight,131072,0.18,0.18,0.0,False,65537,False,image|text,text
+meta-llama/llama-guard-4-12b,Meta: Llama Guard 4 12B,163840,0.18,0.18,0.0,False,,False,image|text,text
+qwen/qwen3.5-27b,Qwen: Qwen3.5-27B,262144,0.195,1.56,0.0,True,65536,False,text|image|video,text
+qwen/qwen3-coder-flash,Qwen: Qwen3 Coder Flash,1000000,0.195,0.975,0.0,False,65536,False,text,text
+allenai/molmo-2-8b,AllenAI: Molmo2 8B,36864,0.19999999999999998,0.19999999999999998,0.0,False,36864,False,text|image|video,text
+allenai/olmo-3.1-32b-instruct,AllenAI: Olmo 3.1 32B Instruct,65536,0.19999999999999998,0.6,0.0,False,,False,text,text
+mistralai/ministral-14b-2512,Mistral: Ministral 3 14B 2512,262144,0.19999999999999998,0.19999999999999998,0.0,False,,False,text|image,text
+prime-intellect/intellect-3,Prime Intellect: INTELLECT-3,131072,0.19999999999999998,1.1,0.0,True,131072,False,text,text
+x-ai/grok-4.1-fast,xAI: Grok 4.1 Fast,2000000,0.19999999999999998,0.5,0.0,True,30000,False,text|image,text
+nvidia/nemotron-nano-12b-v2-vl,NVIDIA: Nemotron Nano 12B 2 VL,131072,0.19999999999999998,0.6,0.0,True,,False,image|text|video,text
+qwen/qwen3-vl-235b-a22b-instruct,Qwen: Qwen3 VL 235B A22B Instruct,262144,0.19999999999999998,0.88,0.0,False,,False,text|image,text
+x-ai/grok-4-fast,xAI: Grok 4 Fast,2000000,0.19999999999999998,0.5,0.0,True,30000,False,text|image,text
+meituan/longcat-flash-chat,Meituan: LongCat Flash Chat,131072,0.19999999999999998,0.7999999999999999,0.0,False,131072,False,text,text
+x-ai/grok-code-fast-1,xAI: Grok Code Fast 1,256000,0.19999999999999998,1.5,0.0,True,10000,False,text,text
+qwen/qwen2.5-vl-32b-instruct,Qwen: Qwen2.5 VL 32B Instruct,128000,0.19999999999999998,0.6,0.0,False,,False,text|image,text
+deepseek/deepseek-chat-v3-0324,DeepSeek: DeepSeek V3 0324,163840,0.19999999999999998,0.77,0.0,True,163840,False,text,text
+mistralai/mistral-saba,Mistral: Saba,32768,0.19999999999999998,0.6,0.0,False,,False,text,text
+minimax/minimax-01,MiniMax: MiniMax-01,1000192,0.19999999999999998,1.1,0.0,False,1000192,False,text|image,text
+meta-llama/llama-guard-2-8b,Meta: LlamaGuard 2 8B,8192,0.19999999999999998,0.19999999999999998,0.0,False,,False,text,text
+qwen/qwen-2.5-coder-32b-instruct,Qwen2.5 Coder 32B Instruct,32768,0.2,0.2,0.0,False,8192,False,text,text
+qwen/qwen-2.5-vl-7b-instruct,Qwen: Qwen2.5-VL 7B Instruct,32768,0.2,0.2,0.0,False,,False,text|image,text
+kwaipilot/kat-coder-pro,Kwaipilot: KAT-Coder-Pro V1,256000,0.207,0.828,0.0,False,128000,False,text,text
+deepseek/deepseek-v3.1-terminus:exacto,DeepSeek: DeepSeek V3.1 Terminus (exacto),163840,0.21,0.7899999999999999,0.0,True,,False,text,text
+deepseek/deepseek-v3.1-terminus,DeepSeek: DeepSeek V3.1 Terminus,163840,0.21,0.7899999999999999,0.0,True,,False,text,text
+qwen/qwen3-coder,Qwen: Qwen3 Coder 480B A35B,262144,0.22,1.0,0.0,False,,False,text,text
+qwen/qwen3-coder:exacto,Qwen: Qwen3 Coder 480B A35B (exacto),262144,0.22,1.7999999999999998,0.0,False,65536,False,text,text
+inception/mercury-2,Inception: Mercury 2,128000,0.25,0.75,0.0,True,50000,False,text,text
+google/gemini-3.1-flash-lite-preview,Google: Gemini 3.1 Flash Lite Preview,1048576,0.25,1.5,1.5,True,65536,False,text|image|video|file|audio,text
+bytedance-seed/seed-1.6,ByteDance Seed: Seed 1.6,262144,0.25,2.0,0.0,True,32768,False,image|text|video,text
+deepseek/deepseek-v3.2,DeepSeek: DeepSeek V3.2,163840,0.25,0.39999999999999997,0.0,True,65536,False,text,text
+openai/gpt-5.1-codex-mini,OpenAI: GPT-5.1-Codex-Mini,400000,0.25,2.0,0.0,True,100000,True,image|text,text
+openai/gpt-5-mini,OpenAI: GPT-5 Mini,400000,0.25,2.0,0.0,True,128000,True,text|image|file,text
+tngtech/deepseek-r1t2-chimera,TNG: DeepSeek R1T2 Chimera,163840,0.25,0.85,0.0,True,163840,False,text,text
+inception/mercury,Inception: Mercury,128000,0.25,0.75,0.0,False,32000,False,text,text
+inception/mercury-coder,Inception: Mercury Coder,128000,0.25,0.75,0.0,False,32000,False,text,text
+anthropic/claude-3-haiku,Anthropic: Claude 3 Haiku,200000,0.25,1.25,0.0,False,4096,True,text|image,text
+minimax/minimax-m2,MiniMax: MiniMax M2,196608,0.255,1.0,0.0,True,196608,False,text,text
+qwen/qwen3.5-122b-a10b,Qwen: Qwen3.5-122B-A10B,262144,0.26,2.08,0.0,True,65536,False,text|image|video,text
+qwen/qwen3.5-plus-02-15,Qwen: Qwen3.5 Plus 2026-02-15,1000000,0.26,1.56,0.0,True,65536,False,text|image|video,text
+qwen/qwen-plus-2025-07-28:thinking,Qwen: Qwen Plus 0728 (thinking),1000000,0.26,0.78,0.0,True,32768,False,text,text
+qwen/qwen-plus-2025-07-28,Qwen: Qwen Plus 0728,1000000,0.26,0.78,0.0,False,32768,False,text,text
+minimax/minimax-m2.1,MiniMax: MiniMax M2.1,196608,0.27,0.95,0.0,True,,False,text,text
+nex-agi/deepseek-v3.1-nex-n1,Nex AGI: DeepSeek V3.1 Nex N1,131072,0.27,1.0,0.0,False,163840,False,text,text
+deepseek/deepseek-v3.2-exp,DeepSeek: DeepSeek V3.2 Exp,163840,0.27,0.41,0.0,True,65536,False,text,text
+baidu/ernie-4.5-300b-a47b,Baidu: ERNIE 4.5 300B A47B ,123000,0.28,1.1,0.0,False,12000,False,text,text
+deepseek/deepseek-r1-distill-qwen-32b,DeepSeek: R1 Distill Qwen 32B,32768,0.29,0.29,0.0,True,32768,False,text,text
+minimax/minimax-m2.5,MiniMax: MiniMax M2.5,196608,0.295,1.2,0.0,True,196608,False,text,text
+minimax/minimax-m2-her,MiniMax: MiniMax M2-her,65536,0.3,1.2,0.0,False,2048,False,text,text
+z-ai/glm-4.6v,Z.ai: GLM 4.6V,131072,0.3,0.8999999999999999,0.0,True,131072,False,image|text|video,text
+amazon/nova-2-lite-v1,Amazon: Nova 2 Lite,1000000,0.3,2.5,0.0,True,65535,True,text|image|video|file,text
+google/gemini-2.5-flash-image,Google: Nano Banana (Gemini 2.5 Flash Image),32768,0.3,2.5,2.5,False,32768,False,image|text,image|text
+thedrummer/cydonia-24b-v4.1,TheDrummer: Cydonia 24B V4.1,131072,0.3,0.5,0.0,False,131072,False,text,text
+mistralai/codestral-2508,Mistral: Codestral 2508,256000,0.3,0.8999999999999999,0.0,False,,False,text,text
+google/gemini-2.5-flash,Google: Gemini 2.5 Flash,1048576,0.3,2.5,2.5,True,65535,False,file|image|text|audio|video,text
+x-ai/grok-3-mini,xAI: Grok 3 Mini,131072,0.3,0.5,0.0,True,,False,text,text
+x-ai/grok-3-mini-beta,xAI: Grok 3 Mini Beta,131072,0.3,0.5,0.0,True,,False,text,text
+nousresearch/hermes-3-llama-3.1-70b,Nous: Hermes 3 70B Instruct,65536,0.3,0.3,0.0,False,65536,False,text,text
+deepseek/deepseek-chat,DeepSeek: DeepSeek V3,163840,0.32,0.8899999999999999,0.0,False,163840,False,text,text
+mistralai/mistral-small-3.1-24b-instruct,Mistral: Mistral Small 3.1 24B,128000,0.35,0.56,0.0,False,,False,text|image,text
+z-ai/glm-4.7,Z.ai: GLM 4.7,202752,0.38,1.9800000000000002,0.0,True,,False,text,text
+qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,262144,0.39,2.34,0.0,True,65536,False,text|image|video,text
+z-ai/glm-4.6,Z.ai: GLM 4.6,204800,0.39,1.9,0.0,True,204800,False,text,text
+mistralai/devstral-2512,Mistral: Devstral 2 2512,262144,0.39999999999999997,2.0,0.0,False,,False,text,text
+deepseek/deepseek-v3.2-speciale,DeepSeek: DeepSeek V3.2 Speciale,163840,0.39999999999999997,1.2,0.0,True,163840,False,text,text
+moonshotai/kimi-k2-0905,MoonshotAI: Kimi K2 0905,131072,0.39999999999999997,2.0,0.0,False,,False,text,text
+mistralai/mistral-medium-3.1,Mistral: Mistral Medium 3.1,131072,0.39999999999999997,2.0,0.0,False,,False,text|image,text
+mistralai/devstral-medium,Mistral: Devstral Medium,131072,0.39999999999999997,2.0,0.0,False,,False,text,text
+minimax/minimax-m1,MiniMax: MiniMax M1,1000000,0.39999999999999997,2.2,0.0,True,40000,False,text,text
+mistralai/mistral-medium-3,Mistral: Mistral Medium 3,131072,0.39999999999999997,2.0,0.0,False,,False,text|image,text
+openai/gpt-4.1-mini,OpenAI: GPT-4.1 Mini,1047576,0.39999999999999997,1.5999999999999999,0.0,False,32768,True,image|text|file,text
+qwen/qwen-plus,Qwen: Qwen-Plus,1000000,0.39999999999999997,1.2,0.0,False,32768,False,text,text
+thedrummer/unslopnemo-12b,TheDrummer: UnslopNemo 12B,32768,0.39999999999999997,0.39999999999999997,0.0,False,32768,False,text,text
+meta-llama/llama-3.1-70b-instruct,Meta: Llama 3.1 70B Instruct,131072,0.39999999999999997,0.39999999999999997,0.0,False,,False,text,text
+baidu/ernie-4.5-vl-424b-a47b,Baidu: ERNIE 4.5 VL 424B A47B ,123000,0.42,1.25,0.0,True,16000,False,image|text,text
+z-ai/glm-4.6:exacto,Z.ai: GLM 4.6 (exacto),204800,0.44,1.76,0.0,True,131072,False,text,text
+moonshotai/kimi-k2.5,MoonshotAI: Kimi K2.5,262144,0.44999999999999996,2.2,0.0,True,65535,False,text|image,text
+deepseek/deepseek-r1-0528,DeepSeek: R1 0528,163840,0.44999999999999996,2.1500000000000004,0.0,True,65536,False,text,text
+undi95/remm-slerp-l2-13b,ReMM SLERP 13B,6144,0.44999999999999996,0.65,0.0,False,4096,False,text,text
+qwen/qwen3-235b-a22b,Qwen: Qwen3 235B A22B,131072,0.45499999999999996,1.8199999999999998,0.0,True,8192,False,text,text
+moonshotai/kimi-k2-thinking,MoonshotAI: Kimi K2 Thinking,131072,0.47,2.0,0.0,True,,False,text,text
+google/gemini-3.1-flash-image-preview,Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview),65536,0.5,3.0,0.0,True,65536,False,image|text,image|text
+google/gemini-3-flash-preview,Google: Gemini 3 Flash Preview,1048576,0.5,3.0,3.0,True,65536,False,text|image|file|audio|video,text
+mistralai/mistral-large-2512,Mistral: Mistral Large 3 2512,262144,0.5,1.5,0.0,False,,False,text|image,text
+arcee-ai/coder-large,Arcee AI: Coder Large,32768,0.5,0.7999999999999999,0.0,False,,False,text,text
+openai/gpt-3.5-turbo,OpenAI: GPT-3.5 Turbo,16385,0.5,1.5,0.0,False,4096,True,text,text
+meta-llama/llama-3-70b-instruct,Meta: Llama 3 70B Instruct,8192,0.51,0.74,0.0,False,8000,False,text,text
+mistralai/mixtral-8x7b-instruct,Mistral: Mixtral 8x7B Instruct,32768,0.54,0.54,0.0,False,16384,False,text,text
+moonshotai/kimi-k2,MoonshotAI: Kimi K2 0711,131000,0.55,2.2,0.0,False,,False,text,text
+thedrummer/skyfall-36b-v2,TheDrummer: Skyfall 36B V2,32768,0.55,0.7999999999999999,0.0,False,32768,False,text,text
+writer/palmyra-x5,Writer: Palmyra X5,1040000,0.6,6.0,0.0,False,8192,True,text,text
+openai/gpt-audio-mini,OpenAI: GPT Audio Mini,128000,0.6,2.4,0.0,False,16384,True,text|audio,text|audio
+moonshotai/kimi-k2-0905:exacto,MoonshotAI: Kimi K2 0905 (exacto),262144,0.6,2.5,0.0,False,,False,text,text
+z-ai/glm-4.5v,Z.ai: GLM 4.5V,65536,0.6,1.7999999999999998,0.0,True,16384,False,text|image,text
+z-ai/glm-4.5,Z.ai: GLM 4.5,131072,0.6,2.2,0.0,True,98304,False,text,text
+microsoft/wizardlm-2-8x22b,WizardLM-2 8x22B,65535,0.62,0.62,0.0,False,8000,False,text,text
+qwen/qwen3-coder-plus,Qwen: Qwen3 Coder Plus,1000000,0.65,3.25,0.0,False,65536,False,text,text
+sao10k/l3.3-euryale-70b,Sao10K: Llama 3.3 Euryale 70B,131072,0.65,0.75,0.0,False,16384,False,text,text
+sao10k/l3.1-euryale-70b,Sao10K: Llama 3.1 Euryale 70B v2.2,32768,0.65,0.75,0.0,False,32768,False,text,text
+google/gemma-2-27b-it,Google: Gemma 2 27B,8192,0.65,0.65,0.0,False,2048,False,text,text
+aion-labs/aion-1.0-mini,AionLabs: Aion-1.0-Mini,131072,0.7,1.4,0.0,True,32768,False,text,text
+deepseek/deepseek-r1-distill-llama-70b,DeepSeek: R1 Distill Llama 70B,131072,0.7,0.7999999999999999,0.0,True,16384,False,text,text
+deepseek/deepseek-r1,DeepSeek: R1,64000,0.7,2.5,0.0,True,16000,False,text,text
+arcee-ai/virtuoso-large,Arcee AI: Virtuoso Large,131072,0.75,1.2,0.0,False,64000,False,text,text
+mancer/weaver,Mancer: Weaver (alpha),8000,0.75,1.0,0.0,False,2000,False,text,text
+qwen/qwen3-max-thinking,Qwen: Qwen3 Max Thinking,262144,0.78,3.9,0.0,True,32768,False,text,text
+aion-labs/aion-2.0,AionLabs: Aion-2.0,131072,0.7999999999999999,1.5999999999999999,0.0,True,32768,False,text,text
+z-ai/glm-5,Z.ai: GLM 5,202752,0.7999999999999999,2.56,0.0,True,,False,text,text
+morph/morph-v3-fast,Morph: Morph V3 Fast,81920,0.7999999999999999,1.2,0.0,False,38000,False,text,text
+eleutherai/llemma_7b,EleutherAI: Llemma 7b,4096,0.7999999999999999,1.2,0.0,False,4096,False,text,text
+alfredpros/codellama-7b-instruct-solidity,AlfredPros: CodeLLaMa 7B Instruct Solidity,4096,0.7999999999999999,1.2,0.0,False,4096,False,text,text
+aion-labs/aion-rp-llama-3.1-8b,AionLabs: Aion-RP 1.0 (8B),32768,0.7999999999999999,1.5999999999999999,0.0,False,32768,False,text,text
+qwen/qwen-vl-max,Qwen: Qwen VL Max,131072,0.7999999999999999,3.1999999999999997,0.0,False,32768,False,text|image,text
+qwen/qwen2.5-vl-72b-instruct,Qwen: Qwen2.5 VL 72B Instruct,32768,0.7999999999999999,0.7999999999999999,0.0,False,32768,False,text|image,text
+amazon/nova-pro-v1,Amazon: Nova Pro 1.0,300000,0.7999999999999999,3.1999999999999997,0.0,False,5120,True,text|image,text
+anthropic/claude-3.5-haiku,Anthropic: Claude 3.5 Haiku,200000,0.7999999999999999,4.0,0.0,False,8192,True,text|image,text
+relace/relace-apply-3,Relace: Relace Apply 3,256000,0.85,1.25,0.0,False,128000,False,text,text
+switchpoint/router,Switchpoint Router,131072,0.85,3.4,0.0,True,,False,text,text
+morph/morph-v3-large,Morph: Morph V3 Large,262144,0.8999999999999999,1.9,0.0,False,131072,False,text,text
+arcee-ai/maestro-reasoning,Arcee AI: Maestro Reasoning,131072,0.8999999999999999,3.3000000000000003,0.0,False,32000,False,text,text
+relace/relace-search,Relace: Relace Search,256000,1.0,3.0,0.0,False,128000,False,text,text
+anthropic/claude-haiku-4.5,Anthropic: Claude Haiku 4.5,200000,1.0,5.0,0.0,True,64000,True,image|text,text
+nousresearch/hermes-4-405b,Nous: Hermes 4 405B,131072,1.0,3.0,0.0,True,,False,text,text
+perplexity/sonar,Perplexity: Sonar,127072,1.0,1.0,0.0,False,,False,text|image,text
+nousresearch/hermes-3-llama-3.1-405b,Nous: Hermes 3 405B Instruct,131072,1.0,1.0,0.0,False,16384,False,text,text
+openai/gpt-3.5-turbo-0613,OpenAI: GPT-3.5 Turbo (older v0613),4095,1.0,2.0,0.0,False,4096,False,text,text
+neversleep/noromaid-20b,Noromaid 20B,4096,1.0,1.75,0.0,False,2048,False,text,text
+qwen/qwen-max,Qwen: Qwen-Max ,32768,1.04,4.16,0.0,False,8192,False,text,text
+openai/o4-mini-high,OpenAI: o4 Mini High,200000,1.1,4.4,0.0,True,100000,True,image|text|file,text
+openai/o4-mini,OpenAI: o4 Mini,200000,1.1,4.4,0.0,True,100000,True,image|text|file,text
+openai/o3-mini-high,OpenAI: o3 Mini High,200000,1.1,4.4,0.0,False,100000,True,text|file,text
+openai/o3-mini,OpenAI: o3 Mini,200000,1.1,4.4,0.0,False,100000,True,text|file,text
+qwen/qwen3-max,Qwen: Qwen3 Max,262144,1.2,6.0,0.0,False,32768,False,text,text
+nvidia/llama-3.1-nemotron-70b-instruct,NVIDIA: Llama 3.1 Nemotron 70B Instruct,131072,1.2,1.2,0.0,False,16384,False,text,text
+openai/gpt-5.1-codex-max,OpenAI: GPT-5.1-Codex-Max,400000,1.25,10.0,0.0,True,128000,True,text|image,text
+deepcogito/cogito-v2.1-671b,Deep Cogito: Cogito v2.1 671B,128000,1.25,1.25,0.0,True,,False,text,text
+openai/gpt-5.1,OpenAI: GPT-5.1,400000,1.25,10.0,0.0,True,128000,True,image|text|file,text
+openai/gpt-5.1-chat,OpenAI: GPT-5.1 Chat,128000,1.25,10.0,0.0,False,16384,True,file|image|text,text
+openai/gpt-5.1-codex,OpenAI: GPT-5.1-Codex,400000,1.25,10.0,0.0,True,128000,True,text|image,text
+openai/gpt-5-codex,OpenAI: GPT-5 Codex,400000,1.25,10.0,0.0,True,128000,True,text|image,text
+openai/gpt-5-chat,OpenAI: GPT-5 Chat,128000,1.25,10.0,0.0,False,16384,True,file|image|text,text
+openai/gpt-5,OpenAI: GPT-5,400000,1.25,10.0,0.0,True,128000,True,text|image|file,text
+google/gemini-2.5-pro,Google: Gemini 2.5 Pro,1048576,1.25,10.0,10.0,True,65536,False,text|image|file|audio|video,text
+google/gemini-2.5-pro-preview,Google: Gemini 2.5 Pro Preview 06-05,1048576,1.25,10.0,10.0,True,65536,False,file|image|text|audio,text
+google/gemini-2.5-pro-preview-05-06,Google: Gemini 2.5 Pro Preview 05-06,1048576,1.25,10.0,10.0,True,65535,False,text|image|file|audio|video,text
+sao10k/l3-euryale-70b,Sao10k: Llama 3 Euryale 70B v2.1,8192,1.48,1.48,0.0,False,8192,False,text,text
+openai/gpt-3.5-turbo-instruct,OpenAI: GPT-3.5 Turbo Instruct,4095,1.5,2.0,0.0,False,4096,True,text,text
+openai/gpt-5.3-chat,OpenAI: GPT-5.3 Chat,128000,1.75,14.0,0.0,False,16384,True,text|image|file,text
+openai/gpt-5.3-codex,OpenAI: GPT-5.3-Codex,400000,1.75,14.0,0.0,True,128000,True,text|image,text
+openai/gpt-5.2-codex,OpenAI: GPT-5.2-Codex,400000,1.75,14.0,0.0,True,128000,True,text|image,text
+openai/gpt-5.2-chat,OpenAI: GPT-5.2 Chat,128000,1.75,14.0,0.0,False,16384,True,file|image|text,text
+openai/gpt-5.2,OpenAI: GPT-5.2,400000,1.75,14.0,0.0,True,128000,True,file|image|text,text
+google/gemini-3.1-pro-preview-customtools,Google: Gemini 3.1 Pro Preview Custom Tools,1048576,2.0,12.0,12.0,True,65536,False,text|audio|image|video|file,text
+google/gemini-3.1-pro-preview,Google: Gemini 3.1 Pro Preview,1048576,2.0,12.0,12.0,True,65536,False,audio|file|image|text|video,text
+google/gemini-3-pro-image-preview,Google: Nano Banana Pro (Gemini 3 Pro Image Preview),65536,2.0,12.0,12.0,True,32768,False,image|text,image|text
+google/gemini-3-pro-preview,Google: Gemini 3 Pro Preview,1048576,2.0,12.0,12.0,True,65536,False,text|image|file|audio|video,text
+openai/o4-mini-deep-research,OpenAI: o4 Mini Deep Research,200000,2.0,8.0,0.0,True,100000,True,file|image|text,text
+ai21/jamba-large-1.7,AI21: Jamba Large 1.7,256000,2.0,8.0,0.0,False,4096,False,text,text
+openai/o3,OpenAI: o3,200000,2.0,8.0,0.0,True,100000,True,image|text|file,text
+openai/gpt-4.1,OpenAI: GPT-4.1,1047576,2.0,8.0,0.0,False,32768,True,image|text|file,text
+perplexity/sonar-reasoning-pro,Perplexity: Sonar Reasoning Pro,128000,2.0,8.0,0.0,True,,False,text|image,text
+perplexity/sonar-deep-research,Perplexity: Sonar Deep Research,128000,2.0,8.0,3.0,True,,False,text,text
+mistralai/mistral-large-2411,Mistral Large 2411,131072,2.0,6.0,0.0,False,,False,text,text
+mistralai/mistral-large-2407,Mistral Large 2407,131072,2.0,6.0,0.0,False,,False,text,text
+mistralai/pixtral-large-2411,Mistral: Pixtral Large 2411,131072,2.0,6.0,0.0,False,,False,text|image,text
+mistralai/mixtral-8x22b-instruct,Mistral: Mixtral 8x22B Instruct,65536,2.0,6.0,0.0,False,,False,text,text
+mistralai/mistral-large,Mistral Large,128000,2.0,6.0,0.0,False,,False,text,text
+openai/gpt-5.4,OpenAI: GPT-5.4,1050000,2.5,15.0,0.0,True,128000,True,text|image|file,text
+openai/gpt-audio,OpenAI: GPT Audio,128000,2.5,10.0,0.0,False,16384,True,text|audio,text|audio
+amazon/nova-premier-v1,Amazon: Nova Premier 1.0,1000000,2.5,12.5,0.0,False,32000,True,text|image,text
+openai/gpt-5-image-mini,OpenAI: GPT-5 Image Mini,400000,2.5,2.0,0.0,True,128000,True,file|image|text,image|text
+openai/gpt-4o-audio-preview,OpenAI: GPT-4o Audio,128000,2.5,10.0,0.0,False,16384,True,audio|text,text|audio
+cohere/command-a,Cohere: Command A,256000,2.5,10.0,0.0,False,8192,True,text,text
+openai/gpt-4o-search-preview,OpenAI: GPT-4o Search Preview,128000,2.5,10.0,0.0,False,16384,True,text,text
+openai/gpt-4o-2024-11-20,OpenAI: GPT-4o (2024-11-20),128000,2.5,10.0,0.0,False,16384,True,text|image|file,text
+inflection/inflection-3-pi,Inflection: Inflection 3 Pi,8000,2.5,10.0,0.0,False,1024,False,text,text
+inflection/inflection-3-productivity,Inflection: Inflection 3 Productivity,8000,2.5,10.0,0.0,False,1024,False,text,text
+cohere/command-r-plus-08-2024,Cohere: Command R+ (08-2024),128000,2.5,10.0,0.0,False,4000,True,text,text
+openai/gpt-4o-2024-08-06,OpenAI: GPT-4o (2024-08-06),128000,2.5,10.0,0.0,False,16384,False,text|image|file,text
+openai/gpt-4o,OpenAI: GPT-4o,128000,2.5,10.0,0.0,False,16384,True,text|image|file,text
+anthropic/claude-sonnet-4.6,Anthropic: Claude Sonnet 4.6,1000000,3.0,15.0,0.0,True,128000,True,text|image,text
+perplexity/sonar-pro-search,Perplexity: Sonar Pro Search,200000,3.0,15.0,0.0,True,8000,False,text|image,text
+anthropic/claude-sonnet-4.5,Anthropic: Claude Sonnet 4.5,1000000,3.0,15.0,0.0,True,64000,False,text|image|file,text
+x-ai/grok-4,xAI: Grok 4,256000,3.0,15.0,0.0,True,,False,image|text,text
+x-ai/grok-3,xAI: Grok 3,131072,3.0,15.0,0.0,False,,False,text,text
+anthropic/claude-sonnet-4,Anthropic: Claude Sonnet 4,200000,3.0,15.0,0.0,True,64000,True,image|text|file,text
+x-ai/grok-3-beta,xAI: Grok 3 Beta,131072,3.0,15.0,0.0,False,,False,text,text
+perplexity/sonar-pro,Perplexity: Sonar Pro,200000,3.0,15.0,0.0,False,8000,False,text|image,text
+anthropic/claude-3.7-sonnet,Anthropic: Claude 3.7 Sonnet,200000,3.0,15.0,0.0,True,64000,False,text|image|file,text
+anthropic/claude-3.7-sonnet:thinking,Anthropic: Claude 3.7 Sonnet (thinking),200000,3.0,15.0,0.0,True,64000,False,text|image|file,text
+sao10k/l3.1-70b-hanami-x1,Sao10K: Llama 3.1 70B Hanami x1,16000,3.0,3.0,0.0,False,,False,text,text
+anthracite-org/magnum-v4-72b,Magnum v4 72B,16384,3.0,5.0,0.0,False,2048,False,text,text
+openai/gpt-3.5-turbo-16k,OpenAI: GPT-3.5 Turbo 16k,16385,3.0,4.0,0.0,False,4096,True,text,text
+alpindale/goliath-120b,Goliath 120B,6144,3.75,7.5,0.0,False,1024,False,text,text
+aion-labs/aion-1.0,AionLabs: Aion-1.0,131072,4.0,8.0,0.0,True,32768,False,text,text
+meta-llama/llama-3.1-405b,Meta: Llama 3.1 405B (base),32768,4.0,4.0,0.0,False,32768,False,text,text
+meta-llama/llama-3.1-405b-instruct,Meta: Llama 3.1 405B Instruct,131000,4.0,4.0,0.0,False,,False,text,text
+raifle/sorcererlm-8x22b,SorcererLM 8x22B,16000,4.5,4.5,0.0,False,,False,text,text
+anthropic/claude-opus-4.6,Anthropic: Claude Opus 4.6,1000000,5.0,25.0,0.0,True,128000,True,text|image,text
+anthropic/claude-opus-4.5,Anthropic: Claude Opus 4.5,200000,5.0,25.0,0.0,True,64000,True,file|image|text,text
+openai/gpt-4o-2024-05-13,OpenAI: GPT-4o (2024-05-13),128000,5.0,15.0,0.0,False,4096,True,text|image|file,text
+anthropic/claude-3.5-sonnet,Anthropic: Claude 3.5 Sonnet,200000,6.0,30.0,0.0,False,8192,True,text|image|file,text
+openai/gpt-4o:extended,OpenAI: GPT-4o (extended),128000,6.0,18.0,0.0,False,64000,True,text|image|file,text
+openai/gpt-5-image,OpenAI: GPT-5 Image,400000,10.0,10.0,0.0,True,128000,True,image|text|file,image|text
+openai/o3-deep-research,OpenAI: o3 Deep Research,200000,10.0,40.0,0.0,True,100000,True,image|text|file,text
+openai/gpt-4-turbo,OpenAI: GPT-4 Turbo,128000,10.0,30.0,0.0,False,4096,True,text|image,text
+openai/gpt-4-turbo-preview,OpenAI: GPT-4 Turbo Preview,128000,10.0,30.0,0.0,False,4096,True,text,text
+openai/gpt-4-1106-preview,OpenAI: GPT-4 Turbo (older v1106),128000,10.0,30.0,0.0,False,4096,True,text,text
+openai/gpt-5-pro,OpenAI: GPT-5 Pro,400000,15.0,120.0,0.0,True,128000,True,image|text|file,text
+anthropic/claude-opus-4.1,Anthropic: Claude Opus 4.1,200000,15.0,75.0,0.0,True,32000,True,image|text|file,text
+anthropic/claude-opus-4,Anthropic: Claude Opus 4,200000,15.0,75.0,0.0,True,32000,True,image|text|file,text
+openai/o1,OpenAI: o1,200000,15.0,60.0,0.0,False,100000,True,text|image|file,text
+openai/o3-pro,OpenAI: o3 Pro,200000,20.0,80.0,0.0,True,100000,True,text|file|image,text
+openai/gpt-5.2-pro,OpenAI: GPT-5.2 Pro,400000,21.0,168.0,0.0,True,128000,True,image|text|file,text
+openai/gpt-5.4-pro,OpenAI: GPT-5.4 Pro,1050000,30.0,180.0,0.0,True,128000,True,text|image|file,text
+openai/gpt-4-0314,OpenAI: GPT-4 (older v0314),8191,30.0,60.0,0.0,False,4096,True,text,text
+openai/gpt-4,OpenAI: GPT-4,8191,30.0,60.0,0.0,False,4096,True,text,text
+openai/o1-pro,OpenAI: o1-pro,200000,150.0,600.0,0.0,True,100000,True,text|image|file,text
